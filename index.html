@@ -1,414 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <title>Landing Zero Free Bootstrap Theme with Video</title>
-    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Codeply">
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/animate.min.css" />
-    <link rel="stylesheet" href="./css/ionicons.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Landing Zero</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+                </a>
             </div>
-            <div class="navbar-collapse collapse" id="bs-navbar">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#one">Intro</a>
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#two">Highlights</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#three">Gallery</a>
+                        <a class="page-scroll" href="#download">Download</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#four">Features</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#last">Contact</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
     </nav>
-    <header id="first">
-        <div class="header-content">
-            <div class="inner">
-                <h1 class="cursive">Simple, One Page Design</h1>
-                <h4>A free landing page theme with video background</h4>
-                <hr>
-                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Grayscale</h1>
+                        <p class="intro-text">A free, responsive, one page Bootstrap theme.
+                            <br>Created by Start Bootstrap.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
-            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
     </header>
-    <section class="bg-primary" id="one">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                    <h2 class="margin-top-0 text-primary">Built On The Bootstrap Grid</h2>
-                    <br>
-                    <p class="text-faded">
-                        Bootstrap's responsive grid comes in 4 sizes or "breakpoints": tiny (xs), small(sm), medium(md) and large(lg). These 4 grid sizes enable you create responsive layouts that behave accordingly on different devices.
-                    </p>
-                    <a href="#three" class="btn btn-default btn-xl page-scroll">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="two">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">Flexible Layouts</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="feature">
-                        <i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>
-                        <h3>Responsive</h3>
-                        <p class="text-muted">Your site looks good everywhere</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="feature">
-                        <i class="icon-lg ion-social-sass wow fadeInUp" data-wow-delay=".2s"></i>
-                        <h3>Customizable</h3>
-                        <p class="text-muted">Easy to theme and customize with SASS</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="feature">
-                        <i class="icon-lg ion-ios-star-outline wow fadeIn" data-wow-delay=".3s"></i>
-                        <h3>Consistent</h3>
-                        <p class="text-muted">A mature, well-tested, stable codebase</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="three" class="no-padding">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/deer.jpg">
-                        <img src="./assets/deer.jpg" class="img-responsive" alt="Image 1">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/beach.jpg">
-                        <img src="./assets/beach.jpg" class="img-responsive" alt="Image 2">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="clearfix hidden-lg"> </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lake.jpg">
-                        <img src="./assets/lake.jpg" class="img-responsive" alt="Image 3">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/bike.jpg">
-                        <img src="./assets/bike.jpg" class="img-responsive" alt="Image 4">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-				<div class="clearfix hidden-lg"> </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/city.jpg">
-                        <img src="./assets/city.jpg" class="img-responsive" alt="Image 5">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/colors.jpg">
-                        <img src="./assets/colors.jpg" class="img-responsive" alt="Image 6">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid" id="four">
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                <h2 class="text-center text-primary">Features</h2>
-                <hr>
-                <div class="media wow fadeInRight">
-                    <h3>Simple</h3>
-                    <div class="media-body media-middle">
-                        <p>What could be easier? Get started fast with this landing page starter theme.</p>
-                    </div>
-                    <div class="media-right">
-                        <i class="icon-lg ion-ios-bolt-outline"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="media wow fadeIn">
-                    <h3>Free</h3>
-                    <div class="media-left">
-                        <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="icon-lg ion-ios-cloud-download-outline"></i></a>
-                    </div>
-                    <div class="media-body media-middle">
-                        <p>Yes, please. Grab it for yourself, and make something awesome with this.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="media wow fadeInRight">
-                    <h3>Unique</h3>
-                    <div class="media-body media-middle">
-                        <p>Because you don't want your Bootstrap site, to look like a Bootstrap site.</p>
-                    </div>
-                    <div class="media-right">
-                        <i class="icon-lg ion-ios-snowy"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="media wow fadeIn">
-                    <h3>Popular</h3>
-                    <div class="media-left">
-                        <i class="icon-lg ion-ios-heart-outline"></i>
-                    </div>
-                    <div class="media-body media-middle">
-                        <p>There's good reason why Bootstrap is the most used frontend framework in the world.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="media wow fadeInRight">
-                    <h3>Tested</h3>
-                    <div class="media-body media-middle">
-                        <p>Bootstrap is matured and well-tested. It's a stable codebase that provides consistency.</p>
-                    </div>
-                    <div class="media-right">
-                        <i class="icon-lg ion-ios-flask-outline"></i>
-                    </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Grayscale</h2>
+                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
                 </div>
             </div>
         </div>
     </section>
-    <aside class="bg-dark">
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
         <div class="container text-center">
-            <div class="call-to-action">
-                <h2 class="text-primary">Get Started</h2>
-                <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a>
-            </div>
-            <br>
-            <hr/>
-            <br>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row">
-                        <h6 class="wide-space text-center">BOOTSTRAP IS BASED ON THESE STANDARDS</h6>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-sass" title="sass"></i>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
-    <section id="last">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
-                    <hr class="primary">
-                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
-                </div>
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row">
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="col-md-12">
-                            <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
-                        </div>
-                        <div class="col-md-4 col-md-offset-4">
-                            <label></label>
-                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-6 col-sm-3 column">
-                    <h4>Information</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Benefits</a></li>
-                        <li><a href="">Developers</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-3 column">
-                    <h4>About</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-3 column">
-                    <h4>Stay Posted</h4>
-                    <form>
-                        <div class="form-group">
-                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
-                        </div>
-                        <div class="form-group">
-                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xs-12 col-sm-3 text-right">
-                    <h4>Follow</h4>
-                    <ul class="list-inline">
-                      <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
-                      <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
-                      <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <br/>
-            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">Landing Zero by BootstrapZero</a> ©2015 Company</span>
+            <p>Copyright &copy; Your Website 2016</p>
         </div>
     </footer>
-    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-        	<div class="modal-body">
-        		<img src="" id="galleryImage" class="img-responsive" />
-        		<p>
-        		    <br/>
-        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
-        		</p>
-        	</div>
-        </div>
-        </div>
-    </div>
-    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-        	<div class="modal-body">
-        		<h2 class="text-center">Landing Zero Theme</h2>
-        		<h5 class="text-center">
-        		    A free, responsive landing page theme built by BootstrapZero.
-        		</h5>
-        		<p class="text-justify">
-        		    This is a single-page Bootstrap template with a sleek dark/grey color scheme, accent color and smooth scrolling.
-        		    There are vertical content sections with subtle animations that are activated when scrolled into view using the jQuery WOW plugin. There is also a gallery with modals
-        		    that work nicely to showcase your work portfolio. Other features include a contact form, email subscribe form, multi-column footer. Uses Questrial Google Font and Ionicons.
-        		</p>
-        		<p class="text-center"><a href="http://www.bootstrapzero.com">Download at BootstrapZero</a></p>
-        		<br/>
-        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
-        	</div>
-        </div>
-        </div>
-    </div>
-    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-        	<div class="modal-body">
-        		<h2 class="text-center">Nice Job!</h2>
-        		<p class="text-center">You clicked the button, but it doesn't actually go anywhere because this is only a demo.</p>
-        		<p class="text-center"><a href="http://www.bootstrapzero.com">Learn more at BootstrapZero</a></p>
-        		<br/>
-        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
-        	</div>
-        </div>
-        </div>
-    </div>
-    <!--scripts loaded here -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery.easing.min.js"></script>
-    <script src="./js/wow.js"></script>
-    <script src="./js/scripts.js"></script>
-  </body>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
 </html>
